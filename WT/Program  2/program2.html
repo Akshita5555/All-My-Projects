@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Faculty Details</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+body{
+    background:#f4f8fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.container{
+    width:500px;
+    border:2px solid #8cc8f7;
+    border-radius:15px;
+    padding:30px;
+    background:white;
+}
+h1{
+    text-align:center;
+    color:#5aa9e6;
+    margin-bottom:25px;
+}
+label{
+    font-size:18px;
+    font-weight:bold;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+textarea{
+    resize:none;
+}
+.gender{
+    margin:10px 0 20px;
+}
+.buttons{
+    display:flex;
+    justify-content:space-between;
+}
+input[type=submit],
+input[type=reset]{
+    width:48%;
+    background:#1e88e5;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+}
+input[type=submit]:hover,
+input[type=reset]:hover{
+    background:#152fc0;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Faculty Details</h1>
+
+<form>
+
+<label>Faculty Name</label>
+<input type="text" placeholder="Enter Name">
+
+<label>Faculty ID</label>
+<input type="text" placeholder="Enter ID">
+
+<label>Department</label>
+<select>
+<option>CSE</option>
+<option>IT</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>ME</option>
+<option>Civil</option>
+</select>
+
+<label>Gender</label>
+
+<div class="gender">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+</div>
+
+<label>Email</label>
+<input type="email" placeholder="Enter Email">
+
+<label>Address</label>
+<textarea rows="4" placeholder="Enter Address"></textarea>
+
+<div class="buttons">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+students {
+color: blue;
+font-weight: 500;
+font-style: italic;
+}
+name {
+color: aqua;
+font-weight: bold;
+}
+age {
+color: aquamarine rgb(255,142,127);
+font-weight: bold;
+}
+roll {
+color: rgb(31,28,80);
+font-weight: bold;
+}
+class {
+color: rgb(130,146,63);
+font-weight: bold;
+}
+name,age,rollno,class {
+display: block;
+}
